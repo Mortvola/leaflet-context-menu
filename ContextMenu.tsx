@@ -89,7 +89,7 @@ const ContextMenuItem = ({
 //   menuEvent: PropTypes.shape().isRequired,
 // };
 
-type MenuItems = Array<MenuItemTypes> | CreateMenuCallback;
+export type MenuItems = Array<MenuItemTypes> | CreateMenuCallback;
 
 type Menus = {
   [key: string]: MenuItems,
