@@ -1,0 +1,38 @@
+{
+  "name": "@mortvola/leaflet-context-menu",
+  "version": "0.1.0",
+  "description": "A context menu for react-leaflet",
+  "main": "./dist/contextMenu.js",
+  "types": "./dist/contextMenu.d.ts",
+  "scripts": {
+    "test": "exit",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mortvola/Utilities.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mortvola/Utilities/issues"
+  },
+  "homepage": "https://github.com/Mortvola/Utilities#readme",
+  "publishConfig": {
+    "@mortvola:registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "dependencies": {
+    "leaflet": "^1.7.1",
+    "react": "^17.0.2",
+    "react-leaflet": "^3.2.1",
+    "typescript": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.7.5",
+    "@types/react": "^17.0.21"
+  }
+}
