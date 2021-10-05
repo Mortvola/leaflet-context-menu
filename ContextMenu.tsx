@@ -1,7 +1,6 @@
 import React, {
   ReactElement, useCallback, useEffect, useRef, useState,
 } from 'react';
-// import PropTypes, { number } from 'prop-types';
 import { useMap } from 'react-leaflet';
 import L from 'leaflet';
 import useExclusiveState from './ExclusiveState';
