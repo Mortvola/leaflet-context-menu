@@ -1,6 +1,6 @@
 {
   "name": "@mortvola/leaflet-context-menu",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "A context menu for react-leaflet",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
