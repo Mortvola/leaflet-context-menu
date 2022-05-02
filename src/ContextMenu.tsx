@@ -3,7 +3,7 @@ import React, { FC, ReactElement } from 'react';
 import ReactDOM from 'react-dom';
 import L, {
   DomUtil,
-  LatLng, LeafletEventHandlerFn, LeafletMouseEvent,
+  LatLng, LeafletEventHandlerFn, LeafletMouseEvent, Map,
 } from 'leaflet';
 import {
   LayerProps, LeafletContextInterface, createLayerComponent,
@@ -119,6 +119,10 @@ class MenuOverlay extends L.Layer {
       this.update();
     }
 
+    return this;
+  }
+
+  onRemove(map: Map) {
     return this;
   }
 

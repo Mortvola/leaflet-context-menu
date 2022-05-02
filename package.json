@@ -1,6 +1,6 @@
 {
   "name": "@mortvola/leaflet-context-menu",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A context menu for react-leaflet",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -25,26 +25,25 @@
     "dist",
     "package.json"
   ],
-  "dependencies": {},
   "peerDependencies": {
+    "@react-leaflet/core": "^2.0.0",
     "leaflet": "^1.7.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "@react-leaflet/core": "^1.1.1",
     "mobx": "^6.3.5",
-    "mobx-react-lite": "^3.2.1"
+    "mobx-react-lite": "^3.2.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
   },
   "devDependencies": {
-    "@react-leaflet/core": "^1.1.1",
+    "@react-leaflet/core": "^2.0.0",
     "@types/leaflet": "^1.7.5",
-    "@types/react": "^17.0.21",
-    "@types/react-dom": "^17.0.10",
+    "@types/react": "^18.0.8",
+    "@types/react-dom": "^18.0.3",
     "css-loader": "^6.4.0",
     "leaflet": "^1.7.1",
     "mobx": "^6.3.5",
     "mobx-react-lite": "^3.2.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
     "style-loader": "^3.3.1",
     "ts-loader": "^9.2.6",
     "typescript": "^4.4.3",
