@@ -1,8 +1,8 @@
 import {
   default as ContextMenu, setMainContextMenu,
   MenuItem, showContextMenu, MenuItems,
-} from "./ContextMenu";
+} from './ContextMenu';
 export { setMainContextMenu, MenuItem, showContextMenu, MenuItems }
-export * from "./ContextMenu";
+export * from './ContextMenu';
 
 export default ContextMenu;
