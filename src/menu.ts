@@ -36,34 +36,18 @@ class MenuOverlay extends L.Layer {
 
   handleKeyDown(e: Event) {
     if ((e as KeyboardEvent).key === 'Escape') {
-      console.log('closing menu with escape');
       this.close();
-    }
-    else {
-      console.log(`handleKeyDown: ${e.type}`);
     }
   }
 
   handleClick(e: LeafletMouseEvent) {
-    console.log('handle click');
-    console.log(e.type)
     this.close();
   }
 
   getEvents(): { [name: string]: LeafletEventHandlerFn } {
     return {
-      // preclick: () => {
-      //   console.log('close menu with preclick');
-      //   this.close();
-      // },
-      zoomstart: () => {
-        console.log('close menu with zoomstart');
-        this.close();
-      },
-      movestart: () => {
-        console.log('close menu with movestart');
-        this.close();
-      },
+      zoomstart: () => this.close(),
+      movestart: () => this.close(),
     };
   }
 
@@ -104,7 +88,6 @@ class MenuOverlay extends L.Layer {
   }
 
   close() {
-    console.log('closing menu');
     L.DomEvent.off(document.documentElement, 'keydown', this.handleKeyDown, this);
     this._map.off('mousedown', this.handleClick, this);
   
@@ -137,7 +120,6 @@ class MenuOverlay extends L.Layer {
 
   onRemove(map: Map) {
     if (this._container) {
-      console.log('removing context menu layer');
       L.DomUtil.remove(this._container);
     }
 

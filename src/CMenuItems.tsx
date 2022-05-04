@@ -22,7 +22,6 @@ const CMenuItems:React.FC<CMenuItemsProps> = ({
     }
 
     const close = () => {
-      console.log('closing menu 1');
       menu.close();
     };
 
